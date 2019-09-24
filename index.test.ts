@@ -1,5 +1,15 @@
 import test from "ava";
-import {ucmp, unot} from "./index";
+import {u32, ucmp, unot} from "./index";
+
+test("u32", t => {
+    t.is(u32(0), 0);
+    t.is(u32(1), 1);
+    t.is(u32(-1), 0xffffffff);
+    t.is(u32(0x7fffffff), 0x7fffffff);
+    t.is(u32(0x80000000), 0x80000000);
+    t.is(u32(-0x7fffffff), 0x80000001);
+    t.is(u32(-0x80000000), 0x80000000);
+});
 
 test("unot", t => {
     t.is(unot(0), 1);
