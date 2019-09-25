@@ -13,3 +13,7 @@ export function ucmp(value: number): number {
 export function umul(a: number, b: number): number {
     return imul(a >>> 0, b >>> 0) >>> 0;
 }
+
+export function udiv(a: number, b: number): number {
+    return ((a >>> 0) / (b >>> 0)) >>> 0;
+}
