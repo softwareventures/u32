@@ -101,3 +101,7 @@ export function ugte(a: number, b: number): number {
 }
 
 export {ueq, uneq};
+
+export function uband(a: number, b: number): number {
+    return (a & b) >>> 0;
+}
