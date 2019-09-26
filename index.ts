@@ -87,3 +87,7 @@ export function ushr(a: number, b: number): number {
 export function ult(a: number, b: number): number {
     return (((a >>> 0) < (b >>> 0)) as any) >>> 0;
 }
+
+export function ulte(a: number, b: number): number {
+    return (((a >>> 0) <= (b >>> 0)) as any) >>> 0;
+}

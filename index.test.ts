@@ -1,5 +1,5 @@
 import test from "ava";
-import {u32, uadd, ucmp, udiv, ult, umod, umul, unot, upow, usub} from "./index";
+import {u32, uadd, ucmp, udiv, ult, ulte, umod, umul, unot, upow, usub} from "./index";
 
 test("u32", t => {
     t.is(u32(0), 0);
@@ -156,4 +156,23 @@ test("ult", t => {
     t.is(ult(-0x80000001, 15243), 0);
     t.is(ult(0x80000000, 15243), 0);
     t.is(ult(0x80000001, 15243), 0);
+});
+
+test("ulte", t => {
+    t.is(ulte(0, 0), 1);
+    t.is(ulte(1, 0), 0);
+    t.is(ulte(-1, 0), 0);
+    t.is(ulte(6, 8), 1);
+    t.is(ulte(6, 6), 1);
+    t.is(ulte(6, 4), 0);
+    t.is(ulte(6, -2), 1);
+    t.is(ulte(-6, 2), 0);
+    t.is(ulte(-6, -2), 1);
+    t.is(ulte(-6, -6), 1);
+    t.is(ulte(-6, -7), 0);
+    t.is(ulte(-0x7fffffff, 15243), 0);
+    t.is(ulte(-0x80000000, 15243), 0);
+    t.is(ulte(-0x80000001, 15243), 0);
+    t.is(ulte(0x80000000, 15243), 0);
+    t.is(ulte(0x80000001, 15243), 0);
 });
