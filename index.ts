@@ -1,3 +1,4 @@
+import {fold} from "@softwareventures/array";
 import {imul, inot as unot} from "i32";
 
 export function u32(value: number): number {
@@ -49,6 +50,10 @@ export function upow(a: number, b: number): number {
 
 export function umul(a: number, b: number): number {
     return imul(a >>> 0, b >>> 0) >>> 0;
+}
+
+export function uproduct(...values: number[]): number {
+    return fold(values, umul, 1);
 }
 
 export function udiv(a: number, b: number): number {
