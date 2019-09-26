@@ -91,3 +91,7 @@ export function ult(a: number, b: number): number {
 export function ulte(a: number, b: number): number {
     return (((a >>> 0) <= (b >>> 0)) as any) >>> 0;
 }
+
+export function ugt(a: number, b: number): number {
+    return (((a >>> 0) > (b >>> 0)) as any) >>> 0;
+}
