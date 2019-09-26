@@ -1,5 +1,5 @@
 import test from "ava";
-import {u32, uadd, uand, ucmp, udiv, ueq, ugt, ugte, ult, ulte, umod, umul, uneq, unot, upow, usub} from "./index";
+import {u32, uadd, uand, ucmp, udiv, ueq, ugt, ugte, ult, ulte, umod, umul, uneq, unot, uor, upow, usub} from "./index";
 
 test("u32", t => {
     t.is(u32(0), 0);
@@ -268,4 +268,23 @@ test("uand", t => {
     t.is(uand(0x100000001, 2431), 2431);
     t.is(uand(0x100000001, 0), 0);
     t.is(uand(1, 0x100000012), 0x12);
+});
+
+test("uor", t => {
+    t.is(uor(0, 0), 0);
+    t.is(uor(0, 1), 1);
+    t.is(uor(1, 1), 1);
+    t.is(uor(-1, 1), 0xffffffff);
+    t.is(uor(-334, 423792), 4294966962);
+    t.is(uor(0, 347829), 347829);
+    t.is(uor(0x80000000, 234782), 0x80000000);
+    t.is(uor(0x80000000, -324293), 0x80000000);
+    t.is(uor(-0x80000000, 32489), 0x80000000);
+    t.is(uor(0x100000000, 0), 0);
+    t.is(uor(0x100000000, 234782), 234782);
+    t.is(uor(0x100000000, -324293), 4294643003);
+    t.is(uor(-0x100000000, 32489), 32489);
+    t.is(uor(0x100000001, 2431), 1);
+    t.is(uor(0x100000001, 0), 1);
+    t.is(uor(1, 0x100000012), 1);
 });

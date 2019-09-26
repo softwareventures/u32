@@ -117,3 +117,7 @@ export function ubor(a: number, b: number): number {
 export function uand(a: number, b: number): number {
     return (((a >>> 0) && (b >>> 0)) as any) >>> 0;
 }
+
+export function uor(a: number, b: number): number {
+    return (((a >>> 0) || (b >>> 0)) as any) >>> 0;
+}
