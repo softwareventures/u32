@@ -75,3 +75,7 @@ export function usum(...values: number[]): number {
 export function usub(a: number, b: number): number {
     return ((a >>> 0) - (b >>> 0)) >>> 0;
 }
+
+export function ushl(a: number, b: number): number {
+    return (a << b) >>> 0;
+}
