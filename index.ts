@@ -1,5 +1,5 @@
 import {fold} from "@softwareventures/array";
-import {imul, inot as unot} from "i32";
+import {ieq as ueq, imul, ineq as uneq, inot as unot} from "i32";
 
 export function u32(value: number): number {
     return value >>> 0;
@@ -100,6 +100,4 @@ export function ugte(a: number, b: number): number {
     return (((a >>> 0) >= (b >>> 0)) as any) >>> 0;
 }
 
-export function ueq(a: number, b: number): number {
-    return (((a >>> 0) === (b >>> 0)) as any) >>> 0;
-}
+export {ueq, uneq};
