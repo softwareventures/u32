@@ -113,3 +113,7 @@ export function uxor(a: number, b: number): number {
 export function ubor(a: number, b: number): number {
     return (a | b) >>> 0;
 }
+
+export function uand(a: number, b: number): number {
+    return (((a >>> 0) && (b >>> 0)) as any) >>> 0;
+}
