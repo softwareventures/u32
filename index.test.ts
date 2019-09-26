@@ -1,5 +1,5 @@
 import test from "ava";
-import {u32, ucmp, udiv, umul, unot} from "./index";
+import {u32, ucmp, udiv, umul, unot, upow} from "./index";
 
 test("u32", t => {
     t.is(u32(0), 0);
@@ -28,6 +28,41 @@ test("ucmp", t => {
     t.is(ucmp(-0x3abc5126), 0x3abc5125);
     t.is(ucmp(0xc543aeda), 0x3abc5125);
     t.is(ucmp(0x3abc5125), 0xc543aeda);
+});
+
+test("upow", t => {
+    t.is(upow(0, 0), 1);
+    t.is(upow(0, -1), 0);
+    t.is(upow(0, -2481), 0);
+    t.is(upow(0, 1), 0);
+    t.is(upow(0, 32147), 0);
+    t.is(upow(1, 0), 1);
+    t.is(upow(1, -1), 1);
+    t.is(upow(1, 2), 1);
+    t.is(upow(1, 100), 1);
+    t.is(upow(2, -1), 0);
+    t.is(upow(2, 0), 1);
+    t.is(upow(2, 4), 16);
+    t.is(upow(2, 7), 128);
+    t.is(upow(2, 31), 2147483648);
+    t.is(upow(2, 32), 0);
+    t.is(upow(4, 16), 0);
+    t.is(upow(3, 19), 1162261467);
+    t.is(upow(3, 20), 3486784401);
+    t.is(upow(3, 21), 0);
+    t.is(upow(3, 30), 0);
+    t.is(upow(5, -32478), 0);
+    t.is(upow(5, 0), 1);
+    t.is(upow(5, 2), 25);
+    t.is(upow(5, 14), 0);
+    t.is(upow(6, 11), 362797056);
+    t.is(upow(6, 12), 2176782336);
+    t.is(upow(6, 13), 0);
+    t.is(upow(7, 0), 1);
+    t.is(upow(7, 3), 343);
+    t.is(upow(37, 9), 0);
+    t.is(upow(6, 179), 0);
+    t.is(upow(7, 190), 0);
 });
 
 test("umul", t => {
