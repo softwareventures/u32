@@ -109,3 +109,7 @@ export function uband(a: number, b: number): number {
 export function uxor(a: number, b: number): number {
     return (a ^ b) >>> 0;
 }
+
+export function ubor(a: number, b: number): number {
+    return (a | b) >>> 0;
+}
