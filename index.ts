@@ -79,3 +79,7 @@ export function usub(a: number, b: number): number {
 export function ushl(a: number, b: number): number {
     return (a << b) >>> 0;
 }
+
+export function ushr(a: number, b: number): number {
+    return a >>> b;
+}
