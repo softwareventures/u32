@@ -42,7 +42,6 @@
     }
   },
   "ava": {
-    "compileEnhancements": false,
     "extensions": [
       "ts"
     ],
