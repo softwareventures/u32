@@ -277,6 +277,16 @@
     dictionary-types "^1.2.0"
     tslib "^1.9.3"
 
+"@softwareventures/array@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-0.22.0.tgz#ee0bf8ec35e76c1d9e6162ac52d9a198a7750e64"
+  integrity sha512-MoM1Cwg8a6CGET2F9AkT4A/Yb56po6xtq5HUVwgUv6CVyCMawJQ7s3aF+258DcbRrpoZLGjiJEQMD970SJFVSQ==
+  dependencies:
+    "@softwareventures/dictionary" "^0.6.0"
+    "@softwareventures/ordered" "^0.2.0"
+    dictionary-types "^1.2.0"
+    tslib "^1.9.3"
+
 "@softwareventures/dictionary@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@softwareventures/dictionary/-/dictionary-0.6.0.tgz#ad3b29cb62c0d7f08aeff7aa68a04906da8f5f7f"
