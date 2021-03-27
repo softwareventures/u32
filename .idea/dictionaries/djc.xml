@@ -3,6 +3,7 @@
     <words>
       <w>ucmp</w>
       <w>umul</w>
+      <w>uneg</w>
       <w>unot</w>
     </words>
   </dictionary>

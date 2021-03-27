@@ -11,6 +11,10 @@ export function ucmp(value: number): number {
     return (~value) >>> 0;
 }
 
+export function uneg(value: number): number {
+    return (-(value | 0)) >>> 0;
+}
+
 export function upow(a: number, b: number): number {
     // Adapted from https://stackoverflow.com/a/101613/31662
     let base = a >>> 0;
