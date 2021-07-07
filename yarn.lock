@@ -2459,15 +2459,15 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-i32@^0.3.0:
-  version "0.3.16"
-  resolved "https://registry.yarnpkg.com/i32/-/i32-0.3.16.tgz#4d2882b99382f954ade11102cdec015d0615d8ac"
-  integrity sha512-Oeyk6lE0+L3xADTRk7EVLHq7mkiPHzN+zHW2SkRIZvUIeKnN3/SDzWPVGsGefwTvx/sHIDXlM7lgwiUd25t2kw==
+"i32@^0.3.0 || ^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/i32/-/i32-1.0.0.tgz#f3fbac7f84e3c0de7912cdcd69c2072d4addaaf9"
+  integrity sha512-/iQTwbWrF/lZl6rOrTo0D9HzGtflo1iZyxc4La95/IW38em8qNhYIUMs+hymiH4bXMPLSFmkNi/nkK7O56Oy0Q==
   dependencies:
     "@softwareventures/array" "^0.31.0 || ^0.33.0 || ^2.0.0 || ^3.0.0"
     "@types/imul" "^1.0.0"
     imul "^1.0.1"
-    tslib "2.0.1"
+    tslib "2.3.0"
 
 iconv-lite@^0.4.24:
   version "0.4.24"
@@ -5307,11 +5307,6 @@ tslib@1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
   integrity sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
-
-tslib@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
-  integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
 tslib@2.1.0:
   version "2.1.0"
