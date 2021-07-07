@@ -3,12 +3,12 @@
   "version": "0.0.0-development",
   "description": "32-bit unsigned integer math",
   "keywords": [
-    "unsigned",
     "int",
     "int32",
-    "u32",
     "integer",
-    "math"
+    "math",
+    "u32",
+    "unsigned"
   ],
   "author": "Daniel Cassidy <mail@danielcassidy.me.uk>",
   "homepage": "https://github.com/softwareventures/u32",
