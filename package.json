@@ -16,6 +16,7 @@
   "repository": "github:softwareventures/u32",
   "license": "ISC",
   "scripts": {
+    "lint": "tsc --noEmit && tslint --project .",
     "prepare": "tsc",
     "semantic-release": "semantic-release",
     "test": "tslint --project . && ava"
