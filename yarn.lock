@@ -511,11 +511,11 @@
     tslib "^2.0.0"
 
 "@softwareventures/nullable@^1.0.0 || ^2.0.0 || ^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-3.1.0.tgz#fa90b5c37cd38c0f2da2727e886e4bdfa36526b8"
-  integrity sha512-iVrju9OeZsBk1itOijs+OFVLWpZqlEMEe8tbfhvqkb5bn7/quBA/ohu4fLL57EW5Ulsi3m6oqrolDzMxggITbA==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-3.2.0.tgz#b4e1b570ba0086eeeb9350ebd25db2533e3dfe88"
+  integrity sha512-xPtUK3GJkrqvOyy14ds5KAJgnB0bbd549ztx6kDpIqk27U0W2Vg1gUBMagmdcRQE+PGFFRimd1C8RVCCizF6Ww==
   dependencies:
-    tslib "2.4.1"
+    tslib "2.6.2"
 
 "@softwareventures/ordered@^1.1.0 || ^2.0.0":
   version "2.0.0"
@@ -604,9 +604,9 @@ abbrev@^1.0.0, abbrev@~1.1.1:
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
 acorn-walk@^8.1.1, acorn-walk@^8.2.0:
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.1.tgz#2f10f5b69329d90ae18c58bf1fa8fccd8b959a43"
-  integrity sha512-TgUZgYvqZprrl7YldZNoa9OciCAyZR+Ejm9eXzKCmjsF5IKp/wgQ7Z/ZpjpGTIUPwrHQIcYeI8qDh4PsEwxMbw==
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.2.tgz#7703af9415f1b6db9315d6895503862e231d34aa"
+  integrity sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==
 
 acorn@^8.4.1, acorn@^8.8.2:
   version "8.11.3"
